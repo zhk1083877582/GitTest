@@ -1,0 +1,242 @@
+body{
+	font-size: 12px;
+}
+.wrap{
+	width: 1200px;
+	margin:0 auto;
+}
+.wrap .resumeContainer{
+	overflow: hidden;
+	margin-top: 15px;
+	border: 1px solid #e1e1e1;
+}
+.wrap .resumeWrap{
+	margin: 20px 0;
+	float: left;
+	width: 25%;
+}
+.wrap .resumeWrap .catalogInfo{
+	float: left;
+	margin-left: 30px;
+	text-align: center;
+}
+.wrap .resumeWrap .catalogChoice{
+	float: left;
+	margin-left: 15px;
+}
+.wrap .resumeWrap .catalogInfo .title{
+	padding: 2px;
+	font-size: 14px;
+	color: #333333;
+	font-weight: 700;
+}
+.wrap .resumeWrap .catalogInfo .imgWrap{
+	margin-top: 10px;
+	display: block;
+}
+.wrap .resumeWrap .catalogInfo .imgWrap img{
+	display: block;
+	width: 60px;
+}
+.wrap .resumeWrap .catalogChoice{
+	float: left;
+	margin-left: 15px;
+}
+.wrap .resumeWrap .catalogChoice li{
+	margin-bottom: 10px;
+	color: #666;
+	cursor: pointer;
+}
+.wrap .resumeWrap .catalogChoice li:hover{
+	color: #f36;
+}
+
+.orderWrap{
+	margin-top: 10px;
+	background: #F8F8F8;
+	border: 1px solid #E1E1E1;
+}
+.orderWrap .orderInfo{
+	float: left;
+	cursor: pointer;
+}
+.orderWrap .orderInfo .on{
+	background: #FFFFFF;
+}
+.orderWrap .orderInfo .borderright{
+	border-right: 1px solid #e1e1e1;
+}
+.orderWrap .orderInfo .fashion{
+	display: block;
+	float: left;
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid transparent;
+}
+.orderWrap .orderInfo .price{
+	position: relative;
+	display: block;
+}
+.orderWrap .orderInfo span{
+	display: block;
+	float: left;
+}
+.orderWrap .orderInfo .priceArrow{
+	margin-left: 3px;
+	width: 10px;
+	height: 40px;
+	background: url(../nextImg/jiage.png) no-repeat center center;
+	background-size: 10px;
+}
+.orderWrap .orderInfo .price:hover .priceDesc{
+	display: block;
+}
+.orderWrap .orderInfo .priceDesc{
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 106px;
+	border: 1px solid #c5c5c5;
+	background: #fff;
+	z-index: 10;
+	display: none;
+}
+.orderWrap .priceWrap{
+	float: left;
+	margin-left: 22px;
+	height: 40px;
+	line-height: 40px;
+}
+.orderWrap .priceWrap input{
+	width: 62px;
+	height: 22px;
+	border: 1px solid #eaeaea;
+}
+.orderWrap .priceWrap .sure{
+	padding: 4px 5px;
+	border: 1px solid #EAEAEA;
+	background: #fff;
+}
+.orderWrap .product{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*goods列表==================================================*/
+.wrap .content-wrap{
+	margin-top:20px ;
+	margin-right: -20px;
+}
+.wrap .item{
+	float: left;
+	width: 224px;
+	margin: 0 20px 20px 0;
+	transition: all 0.2s linear 0s;
+}
+.wrap .item img{
+	width: 224px;
+	height: 340px;
+	opacity: 0.7;
+}
+.wrap .item .part{
+	margin-top: 5px;
+	height: 30px;
+	line-height: 30px;
+}
+.wrap .item .price{
+	display: inline-block;
+	font-size: 16px;
+	color: #f36;
+	margin-right: 2px;
+}
+.wrap .item .collect{
+	float: right;
+	line-height: 14px;
+	font-size: 14px;
+	margin-top: 6px;
+	margin-left: 3px;
+	color: #999;
+}
+.wrap .item .title{
+	display: block;
+	font-size: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.wrap .item .icon-star{
+	margin-right:3px;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background:url(../images/xingxing.png)center no-repeat;
+	background-size: 100%;
+}
+.wrap .icon-select img{
+	width: 38px;
+	height: 20px;
+	margin-right: 4px;
+	display: inline-block;
+	vertical-align: sub;
+}
+
+.content-wrap .item_active:hover{
+	-webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);;
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+	transform: translate3d(0,-2px,0);
+	transform: scale(1.1);
+}
+.content-wrap .item_active:hover img{
+	opacity: 1;
+	
+}
+/*分页nav*/
+.pageNav{
+	line-height: 30px;
+	margin: 10px auto;
+}
+.pageNav, .pageNav a, .pageNav i{
+	text-align: center;
+	font-size: 14px;
+}
+.pageNav a, .pageNav i{
+	display: inline-block;
+	margin: 0 1px;
+	min-width: 30px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #eee;
+	white-space: nowrap;
+	
+	background-color:#fff;
+}
+.pageNav .currentpage{
+	background-color: #f36;
+	border: 1px solid #f36;
+	color: #fff;
+}
+.pageNav #pageNext{
+	display: inline-block;
+	width: auto;
+	height: 30px;
+	padding: 0 13px;
+	font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

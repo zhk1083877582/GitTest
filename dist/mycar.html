@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>购物车</title>
+	<link rel="stylesheet" href="css/public.css"/>
+	<link rel="stylesheet" href="css/mycar.css" />
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/public.js"></script>
+	<script src="js/carts.js"></script>
+</head>
+<body>
+		<!-- hear开始============================================================================== -->
+		<div class="head">
+			<!--头部导航栏-->
+			<div id="top_nav">
+				<div id="top_nav_cantainer">
+					<div class="inner">
+						<ul class="clear">
+							<li class="go_home">
+								<a href="index.html">
+									<em class="home"></em>
+									美丽说首页
+								</a>
+							</li>
+							<li class="weixin-Regiter">
+								<a href="">
+									<em class="weixin"></em>
+									微信登录
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<em class="qq"></em>
+									QQ登录
+								</a>
+							</li>
+							<!--登录-->
+							<li>
+								<a href="enter.html"target="_blank">登录</a>
+							</li>
+							<!--注册-->
+							<li>
+								<a href="register.html" target="_blank">注册</a>
+							</li>
+							
+							<li id="show_hide">
+								<a href="">
+									<em class="drop"></em>
+									我的收藏
+								</a>
+								<ul class="down">
+									<li><a href="#">收藏宝贝</a></li>
+									<li><a href="#">收藏店铺</a></li>
+								</ul>
+							</li>
+							<li class="shopping_cart">
+								<a href="shopCar.html" target="_blank">
+									<em class="car"></em>
+									我的购物车
+								</a>
+								<div class="shop_cart_info">
+									<div class="empty_cart">购物车里没有商品！</div>
+								</div>								
+							</li>
+							<li>
+								<a href="#">
+									<em class="order"></em>
+									我的订单
+								</a>
+							</li>
+							<li class="help_li">
+								<a href="#">
+									帮助中心
+									<em class="help"></em>
+								</a>
+								<ul class="down">
+									<li><a href="#">买家服务</a></li>
+									<li><a href="#">商家服务</a></li>
+									<li><a href="#">规则中心</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">商家后台</a>
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+			</div>
+			<!--头部导航栏结束-->
+			<div class="body_wrap">
+				<div class="g-header clear">
+					<div class="g-header-in">
+						<div class="logo logo-cart"></div>
+						<div class="process-bar">
+							<div class="md_process_wrap md_process_step1_5">
+								<div class="md_process_sd"></div>
+								<em class="md_process_i md_process_i1">
+									1
+									<span class="md_process_tip color">购物车</span>
+								</em>
+								<em class="md_process_i md_process_i2">
+									2
+									<span class="md_process_tip">确认订单</span>
+								</em>
+								<em class="md_process_i md_process_i3">
+									3
+									<span class="md_process_tip">支付</span>
+								</em>
+								<em class="md_process_i md_process_i4">
+									<img src="images/mycar3.png" alt="" width="23px" height="23px"/>
+									<span class="md_process_tip">完成</span>
+								</em>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			 <section class="cartMain">
+        <div class="cartMain_hd">
+            <ul class="order_lists cartTop">
+                <li class="list_chk">
+                    <!--所有商品全选-->
+                    <input type="checkbox" id="all" class="whole_check">
+                    全选
+                </li>
+                <li class="list_con">商品信息</li>
+                <li class="list_info">商品参数</li>
+                <li class="list_price">单价</li>
+                <li class="list_amount">数量</li>
+                <li class="list_sum">金额</li>
+                <li class="list_op">操作</li>
+            </ul>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_a" class="shopChoice">
+                </div>
+                <div class="shop_name">
+                    店铺：<a href="javascript:;">美丽优选</a>
+                </div>
+            </div>
+            <div class="order_content">
+               
+                <ul class="order_lists">
+                </ul>
+            </div>
+        </div>
+        <!--底部-->
+        <div class="bar-wrapper">
+            <div class="bar-right">
+                <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                <div class="calBtn"><a href="javascript:;">付款</a></div>
+            </div>
+        </div>
+    </section>
+    <div class="g-wrap wrap">
+		<div class="cart-wrap">
+			<div class="cart_empty">
+				<div class="cart_empty_icon"></div>
+				<h5 class="mb20">您的购物车还是空的，赶快去挑选商品吧！</h5>
+				<ul class="cart_empty_list">
+					<li>
+						去看看大家都喜欢的
+						<a href="#">最热</a>
+					</li>
+					<li>
+						去看看正在折扣中的优品
+						<a href="index.html">首页</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+    <section class="model_bg"></section>
+    <section class="my_model">
+        <p class="title">提示<span class="closeModel">X</span></p>
+        <p>您确认要删除该宝贝吗？</p>
+        <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+    </section>
+				<div class="g-footer">
+					<p class="mofa">
+						<a href="#">美丽说</a> © 2016 Meilishuo.com,All Rights Reserved.
+					</p>
+					<div class="icons">
+						<a href="javascript:;" class="vs"></a>
+						<a href="javascript:;" class="mc"></a>
+						<a href="javascript:;" class="up"></a>
+						<a href="javascript:;" class="pa"></a>
+						<a href="javascript:;" class="kx"></a>
+						<a href="javascript:;" class="pc"></a>
+					</div>
+				</div>
+
+</body>
+</html>
